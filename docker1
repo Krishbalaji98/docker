@@ -1,0 +1,5 @@
+FROM httpd
+COPY handtime-html /usr/local/apache2/htdocs
+VOLUME /home/ubuntu/docker:/usr/local/apache2/
+WORKDIR /home/ubuntu
+EXPOSE 80 443
